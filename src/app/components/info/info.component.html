@@ -1,0 +1,9 @@
+<div>
+  <button (click)="closeAction.emit()">Close</button>
+  <strong>{{ name }}</strong>
+  <p>{{ descr }}</p>
+    <div *ngFor="let item of (data | async)">
+      <div>{{item.title}}</div>
+      <div>{{item.descr}}</div>
+    </div>
+</div>
